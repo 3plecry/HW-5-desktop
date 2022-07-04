@@ -651,6 +651,59 @@ margin-left: 0;
     background-color: var(--accent-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* -------------Модальное Окно-------------- */
+
+.backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 1024px;
+background: rgba(0, 0, 0, 0.2);
+transition: opacity 250ms linear, visibility 250ms linear;    
+}
+
+.backdrop.is-hidden .modal {
+ transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
+width: 528px;
+min-height: 581px;
+background-color: #ffffff;
+border-radius: 4px;
+transition: transform 250px linear;
+}
+
+.modal-close-btn {
+position: absolute;
+right: 8px;
+top: 8px;
+width: 30px;
+height: 30px;
+background: transparent;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.modal-icon {
+    fill: #000000;
+}
+
+.is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;    
+}
+
 /* ---------------------------Портфолио----------------------------------- */
 
 .main-item-btn:not(:last-child) {
@@ -687,6 +740,28 @@ margin-right: 15px;
 margin-left: 15px;
 } 
 
+.main-item:hover .main-img-cover-text {
+    transform: translateY(0);    
+}
+
+.main-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-img-cover-text {
+position: absolute;
+top: 0;
+color: #FFFFFF;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+background: rgba(33, 150, 243, 0.9);
+padding: 63px 24px;
+transform: translateY(100%);
+transition: transform 250ms linear;
+}
 
 .main-item-subtext {
     margin-top: 4px;
