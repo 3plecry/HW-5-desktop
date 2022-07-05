@@ -445,22 +445,22 @@ background-color: transparent;
 
 .team-soc-link:hover {
 background-color: var(--accent-color);
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-soc-link:focus {
 background-color: var(--accent-color);
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-soc-link:hover .team-soc-icon {
 fill: #FFFFFF;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-soc-link:focus .team-soc-icon {
 fill: #FFFFFF;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /*------------------------ Clients ---------------------------*/
@@ -502,7 +502,7 @@ align-items: center;
 .clients-soc-link:focus {
 border-color: var(--accent-color);
 fill: var(--accent-color);
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-soc-item {
@@ -649,7 +649,7 @@ margin-left: 0;
 
 .team-soc-link-footer:hover, .team-soc-link-footer:focus {
     background-color: var(--accent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------Модальное Окно-------------- */
@@ -783,6 +783,7 @@ letter-spacing: 0.03em;
 border-radius: 4px;
 border-color: transparent;
 cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-list-btn {
